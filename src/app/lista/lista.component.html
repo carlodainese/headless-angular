@@ -1,0 +1,29 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
+<div  id="albums">
+    <div class="row">
+        <div class="col-md-3 col-sm-12" *ngFor="let list of lists">
+            <div class="card">
+                
+                <div class="card-body">
+                    
+                    <span>{{list.field_sito}}</span> 
+                    <div class="card-text">
+                        
+                            <strong>created:</strong>
+                            <span>{{list.created}}</span>
+                       
+                        <br>
+                        <strong>titolo:</strong>
+                      <p ng-bind-html="list.Titolo"></p>
+                        </div>
+                            </div>         
+                    </div>
+                   
+               
+           
+            <br>
+        </div>
+    </div>
+    
+</div>

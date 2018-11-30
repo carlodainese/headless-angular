@@ -1,0 +1,29 @@
+.col-25 {
+height: 100px;
+  width: 250px;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  
+  width: 250px;
+  height: 200px;
+  margin-top: 6px;
+}
+
+input[type=text], select, textarea {
+    width: 500px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input.bodyField{
+	height: 190px;
+}
+
+button{
+font-size: 20px;
+}

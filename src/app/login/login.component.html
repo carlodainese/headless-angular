@@ -1,0 +1,16 @@
+ <div>
+ 	
+ 	<div *ngIf="!this.authenticated">
+        <input id='nField' type="text" ng-model="name" placeholder="username" required=""/>
+      
+        <input id='pField' type="password" ng-model="pass" placeholder="password" required=""/>
+      
+        <button (click)="LogIn()">Login</button></div>
+        <div *ngIf="this.authenticated">
+        	<span>Benvenuto {{this.nome}}  </span>
+      <button (click)="LogOut()">Logout</button>
+     
+ </div>
+  </div>
+
+  <br>
